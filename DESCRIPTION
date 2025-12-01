@@ -2,6 +2,7 @@ Package: irisEDA
 Title: Clean Summary Statistics for Exploratory Data Analysis
 Version: 0.0.0.9000
 Authors@R: 
+<<<<<<< HEAD
     person("Lyndsey", "Guidash", email = "lguidash@usf.edu", role = c("aut", "cre"))
 Description: Provides simple functions to generate clean, readable summary statistics for categoric and numeric variables. Designed for fast exploratory data analysis and instructional use, demonstrated with the iris dataset.
 License: MIT + file LICENSE
@@ -11,3 +12,12 @@ Imports: dplyr, tibble, ggplot2
 Suggests: knitr, rmarkdown, testthat
 VignetteBuilder: knitr
 RoxygenNote: 7.3.3
+=======
+    person("Lyndsey", "Guidash", "lguidash@usf.edu", role = c("aut", "cre"))
+Description: Provides simple funtioncs to generate clean, readable summary statistics for categorical and numeric variables. Designed for fast exploratory analysis and instructional use, demonstrated with the iris dataset.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: dplyr, tibble
+Suggests: knitr, rmarkdown, testthat
+>>>>>>> 1a74308d02b4653ee4ccffa6108ee49a30916e2f
