@@ -1,0 +1,43 @@
+---
+output: github_document
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# irisEDA
+
+Simple, clean summaries for exploratory data analysis, demonstrated with the iris dataset.
+
+## Installation
+
+You can install the development version of irisEDA from [GitHub]:
+
+``` r
+# install.packages("remotes")
+remotes::install_github("lyndseyg05/irisEDA")
+```
+
+## Example
+
+Load the package and try it with the built-in iris dataset:
+
+```{r example}
+library(irisEDA)
+data(iris)
+
+# Numeric summary
+summarize_numeric(iris, "Sepal.Length")
+
+# Categorical summary
+summarize_categorical(iris, "Species")
+
+# Dataframe summary
+summarize_dataframe(iris)
+```

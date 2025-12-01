@@ -1,0 +1,28 @@
+---
+title: "Intro to irisEDA"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Intro to irisEDA}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(irisEDA)
+data(iris)
+
+summarize_numeric(iris, "Sepal.Length")
+summarize_categorical(iris, "Species")
+summarize_dataframe(iris)
+
+plots <- plot_dataframe(iris)
+plots$Sepal.Length
+plots$Species
+```
